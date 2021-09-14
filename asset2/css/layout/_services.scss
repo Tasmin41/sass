@@ -1,0 +1,49 @@
+.services-area{
+    background-color: $bg_gray;
+}
+
+
+
+.services{
+  padding-left: 60px;
+  .single-service {
+    background-color: $white;
+    float: left;
+    width: 360px;
+    margin-right: 30px;
+    padding: 20px 40px;
+    border: 1px solid $border_gray;
+    margin-bottom: 40px;
+    &:last-child {
+        margin-right: 0;
+      }
+      &:hover{
+          i{
+            background-color:$primary_color;
+            color: $white;
+          }
+          border-color: $primary_color;
+      }
+      i {
+        width: 50px;
+        height: 40px;
+        border: 1px solid $border_gray;
+        text-align: center;
+        padding: 10px;
+        border-radius: 50%;
+        
+      }
+      h4 {
+        font-size: 22px;
+        margin: 10px 0;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+      p {
+        padding: 5px;
+      }
+  }
+
+}
+
+  

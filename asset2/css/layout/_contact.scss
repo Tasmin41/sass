@@ -1,0 +1,58 @@
+
+.single-top {
+    float: left;
+    width: 370px;
+    margin-right: 30px;
+    &:last-child {
+        margin-right: 0;
+      }
+      i {
+        font-size: 40px;
+      }
+      h5 {
+        margin: 10px 0;
+        font-size: 22px;
+      }
+      p{
+          color:$black;
+      }
+
+  }
+  .contact-bottom {
+    margin: 20px 0;
+    .form {
+        float: left;
+        width: 700px;
+        margin-right: 20px;
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+          input[type="submit"] {
+            width: auto;
+            padding: 20px 40px;
+            background-color: purple;
+            border: 0;
+            border-radius: 5px;
+            font-size: 22px;
+            color: white;
+            cursor: pointer;
+          }
+          textarea {
+            width: 100%;
+            font-size: 20px;
+            padding: 10px;
+            margin-bottom: 10px;
+          }
+      }
+      .map {
+        
+        float: right;
+        width: 450px;
+        height: 400px;
+      }
+      
+  }
+ 

@@ -1,0 +1,89 @@
+@import 'color';
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 1200px;
+    margin: 0 auto;
+}
+.fix:after,.fix:before{
+    content: "";
+    clear: both;
+    display: table;
+}
+a{
+    text-decoration: none;
+    color: $black;
+    font-size: 20px;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.btn{
+    color:$white;
+    padding: 10px 40px;
+    font-size: 22px;
+    text-transform: capitalize;
+    &.box-btn{
+        background-color: $primary_color;
+        &:hover{
+            background-color: turquoise;
+        }
+    }
+    &.border-btn{
+        border:1px solid $primary_color;
+        &:hover{
+            border-color: turquoise;
+        }
+    }
+
+    
+}
+/*section-title css*/
+.section-title{
+    h2 {
+        font-size: 40px;
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+      p {
+        margin: 30px auto;
+        width: 500px;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
+} 
+
+
+
+
+
+
+
+
+@for $i from 1 through 10{
+    .pt-#{$i*10}{
+        padding-top: $i*10px;
+    }
+    .pb-#{$i*10}{
+        padding-bottom: $i*10px;
+    }
+    .mt-#{$i*10}{
+        margin-top: $i*10px;
+    }
+    .mb-#{$i*10}{
+        margin-bottom: $i*10px;
+    }
+}
+$list:top,right,center,left;
+@each $i in $list{
+    .text-#{$i}{
+        text-align: $i;
+    }
+}

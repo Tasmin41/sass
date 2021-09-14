@@ -1,0 +1,5 @@
+Git Init
+git add *
+git commit -m "kiccu leka"
+git remote
+git push origin master
